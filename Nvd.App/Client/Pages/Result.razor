@@ -1,0 +1,25 @@
+﻿@page "/result"
+@using Nvd.DataAccess.Objects
+@inject HttpClient Http
+
+<h3>Result</h3>
+<input type="text" @bind="cveID" />
+<button @onclick="@getInfo">Get Data</button>
+<br />
+@if (result == null)
+{
+    <p><em>There is no data to display</em></p>
+}
+else
+{
+    <ResultTable DataResult="result"></ResultTable>
+}
+@code {
+    private Nvd.DataAccess.Objects.Result result { get; set; }
+    private string cveID;
+
+    protected void getInfo()
+    {
+        result = Task.Run(() => Http.GetFromJsonAsync<Nvd.DataAccess.Objects.Result>("http://localhost:5000/api/Results/GetResultByCve/" + cveID)).Result;
+    }
+}

@@ -1,0 +1,31 @@
+﻿@using Nvd.DataAccess.Objects
+ 
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Data type</th>
+            <th>Data Format</th>
+            <th>Data Version</th>
+            <th>Timestamp</th>
+            <th>Cve Item ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@DataResult.ID</td>
+            <td>@DataResult.CVE_data_type</td>
+            <td>@DataResult.CVE_data_format</td>
+            <td>@DataResult.CVE_data_version</td>
+            <td>@DataResult.CVE_data_timestamp</td>
+            <td>@DataResult.CVE_Items.ToArray()[0].ID</td>
+        </tr>
+    </tbody>
+</table>
+
+@code {
+    [Parameter]
+    public Result DataResult { get; set; }
+
+
+    }

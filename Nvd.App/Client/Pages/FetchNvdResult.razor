@@ -1,0 +1,43 @@
+﻿@page "/fetchnvddata"
+@using Nvd.DataAccess.Objects
+@inject HttpClient Http
+
+<h1>NVD Database Results</h1>
+
+<p></p>
+
+@if (nvdResults == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Results Per Page</th>
+                <th>Total Results</th>
+                <th>Results</th>
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>@nvdResults.ID</td>
+                    <td>@nvdResults.resultsPerPage</td>
+                    <td>@nvdResults.totalResults</td>
+                    <td>@nvdResults.result</td>
+                </tr>
+        </tbody>
+    </table>
+}
+
+@code {
+    private Nvd.DataAccess.Objects.NvdSearchResult nvdResults;
+
+    protected override async Task OnInitializedAsync()
+    {
+        nvdResults = await Http.GetFromJsonAsync<Nvd.DataAccess.Objects.NvdSearchResult>("http://localhost:5000/api/NvdSearchResults/1");
+    }
+
+}

@@ -1,0 +1,25 @@
+﻿@using Nvd.DataAccess.Objects
+@using Nvd.App.Client.Shared.CVE_data_Meta
+
+@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+<CVE_Data_Meta_Label CveData="temp"></CVE_Data_Meta_Label>
+
+@code{
+    public CVE_Data_Meta temp;
+
+    protected override void OnInitialized()
+    {
+        temp = new CVE_Data_Meta()
+        {
+            PrimaryKey = 1,
+            ID = "CVE-2021-38097",
+            ASSIGNER = "cve@mitre.org"
+        };
+    }
+}

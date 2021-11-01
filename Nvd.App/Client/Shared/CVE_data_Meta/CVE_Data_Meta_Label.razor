@@ -1,0 +1,9 @@
+﻿@using Nvd.DataAccess.Objects
+
+<div class="badge rounded-pill bg-secondary text-light">@CveData.ID</div>
+
+@code {
+    [Parameter]
+    public CVE_Data_Meta CveData { get; set; }
+
+}

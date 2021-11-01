@@ -1,0 +1,15 @@
+D:\source\dotnet\nvd-downloader\Nvd.DataAccess\obj\Debug\net5.0\Nvd.DataAccess.csproj.AssemblyReference.cache
+D:\source\dotnet\nvd-downloader\Nvd.DataAccess\obj\Debug\net5.0\Nvd.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\source\dotnet\nvd-downloader\Nvd.DataAccess\obj\Debug\net5.0\Nvd.DataAccess.AssemblyInfoInputs.cache
+D:\source\dotnet\nvd-downloader\Nvd.DataAccess\obj\Debug\net5.0\Nvd.DataAccess.AssemblyInfo.cs
+D:\source\dotnet\nvd-downloader\Nvd.DataAccess\obj\Debug\net5.0\Nvd.DataAccess.csproj.CoreCompileInputs.cache
+D:\source\dotnet\nvd-downloader\Nvd.DataAccess\bin\Debug\net5.0\Nvd.DataAccess.deps.json
+D:\source\dotnet\nvd-downloader\Nvd.DataAccess\bin\Debug\net5.0\Nvd.DataAccess.runtimeconfig.json
+D:\source\dotnet\nvd-downloader\Nvd.DataAccess\bin\Debug\net5.0\Nvd.DataAccess.runtimeconfig.dev.json
+D:\source\dotnet\nvd-downloader\Nvd.DataAccess\bin\Debug\net5.0\Nvd.DataAccess.dll
+D:\source\dotnet\nvd-downloader\Nvd.DataAccess\bin\Debug\net5.0\ref\Nvd.DataAccess.dll
+D:\source\dotnet\nvd-downloader\Nvd.DataAccess\bin\Debug\net5.0\Nvd.DataAccess.pdb
+D:\source\dotnet\nvd-downloader\Nvd.DataAccess\obj\Debug\net5.0\Nvd.DataAccess.dll
+D:\source\dotnet\nvd-downloader\Nvd.DataAccess\obj\Debug\net5.0\ref\Nvd.DataAccess.dll
+D:\source\dotnet\nvd-downloader\Nvd.DataAccess\obj\Debug\net5.0\Nvd.DataAccess.pdb
+D:\source\dotnet\nvd-downloader\Nvd.DataAccess\obj\Debug\net5.0\Nvd.DataAccess.genruntimeconfig.cache
